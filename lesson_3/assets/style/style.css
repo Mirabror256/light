@@ -1,0 +1,695 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --whi: #fff;
+  --bla: #000;
+  --btnCl: #ff8531;
+  --mainBg: #2e2e2e;
+  --color1: #360050;
+  --color2: #feab4b;
+  --color3: #ff7a0f;
+  --color4: #bd6b24;
+  --color5: #bb9f90;
+  --color6: #fefbd6;
+  --color7: #9d690c;
+  --color8: #262d30;
+  --color9: #ffeabb;
+  --color10: #bfbfb3;
+  --footerBg: #363636;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  background: url(/assets/img/Mask\ Group.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul li {
+  margin: 0 20px;
+  list-style: none;
+  display: inline-block;
+}
+header nav ul li a {
+  color: var(--whi);
+  opacity: 70%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+header nav ul li a:hover {
+  opacity: 1;
+}
+header nav .icons {
+  gap: 30px;
+  display: flex;
+  color: var(--whi);
+  align-items: center;
+}
+header .headerText {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+header .headerText p {
+  color: var(--whi);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  font-family: Noto Serif JP;
+}
+header .headerText h1 {
+  color: var(--whi);
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+header .headerText button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 50px;
+  color: var(--whi);
+  padding: 22px 45px;
+  margin-top: 50px;
+  border-radius: 5px;
+  letter-spacing: 0em;
+  font-family: Roboto Slab;
+  background: var(--btnCl);
+}
+main {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background: var(--mainBg);
+}
+main #dFlexImg {
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #dFlexImg .item {
+  width: 100%;
+  position: relative;
+}
+main #dFlexImg .item img {
+  width: 100%;
+  height: auto;
+}
+main #dFlexImg .item .itemText {
+  top: 50%;
+  position: absolute;
+  z-index: 1000;
+  transform: translate(49px, -50%);
+}
+main #dFlexImg .item .itemText p {
+  color: var(--whi);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #dFlexImg .item .itemText h3 {
+  color: var(--whi);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 11px 0 27px 0;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #dFlexImg .item .itemText span {
+  color: var(--whi);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #bestSeller {
+  width: 100%;
+  height: 100%;
+  margin-top: 112px;
+}
+main #bestSeller h2 {
+  color: var(--whi);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #bestSeller .btn-group {
+  margin: 29px 0 70px 0;
+}
+main #bestSeller .btn-group button {
+  opacity: 0.5;
+  color: var(--whi);
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 10px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px 38px;
+  letter-spacing: 0em;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid var(--btnCl);
+  font-family: Noto Serif JP;
+}
+main #bestSeller .btn-group button.active {
+  opacity: 1;
+  border: none;
+  background: var(--btnCl);
+}
+main #bestSeller .gridContent {
+  gap: 36px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+}
+main #bestSeller .gridContent .item {
+  border-radius: 5px;
+  position: relative;
+  background: #494949;
+  border: 1px solid var(--btnCl);
+}
+main #bestSeller .gridContent .item img {
+  opacity: 1 !important;
+  width: auto;
+  height: 196px;
+  display: block;
+  margin: 0 auto;
+}
+main #bestSeller .gridContent .item p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--whi);
+  padding-left: 30px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #bestSeller .gridContent .item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--btnCl);
+  padding-left: 30px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #bestSeller .gridContent .item .icon {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  right: -15px;
+  top: -28px;
+  border-radius: 50%;
+  background: var(--btnCl);
+}
+main #bestSeller .gridContent .item .icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--whi);
+  transform: translate(-50%, -50%);
+}
+main #bestSeller .gridContent .item .productColor {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin: 28px 0 20px 0;
+  justify-content: center;
+}
+main #bestSeller .gridContent .item .productColor .color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+main #bestSeller .gridContent .item .productColor .color1 {
+  background: var(--color1);
+}
+main #bestSeller .gridContent .item .productColor .color2 {
+  background: var(--color2);
+}
+main #bestSeller .gridContent .item .productColor .color3 {
+  background: var(--color3);
+}
+main #bestSeller .gridContent .item .productColor .color4 {
+  background: var(--color4);
+}
+main #bestSeller .gridContent .item .productColor .color5 {
+  background: var(--color5);
+}
+main #bestSeller .gridContent .item .productColor .color6 {
+  background: var(--color6);
+}
+main #bestSeller .gridContent .item .productColor .color7 {
+  background: var(--color7);
+}
+main #bestSeller .gridContent .item .productColor .color8 {
+  background: var(--color8);
+}
+main #bestSeller .gridContent .item .productColor .color9 {
+  background: var(--color9);
+}
+main #bestSeller .gridContent .item .productColor .color10 {
+  background: var(--color10);
+}
+main #bestSeller .gridContent .item .productColor .color:hover {
+  transform: scale(1.7);
+  border: 3px solid var(--whi);
+}
+main #collection {
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 168px;
+  align-items: flex-start;
+}
+main #collection .left {
+  width: 100%;
+}
+main #collection .left h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--whi);
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #collection .left p {
+  opacity: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--whi);
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin: 16px 0 71px 0;
+  font-family: Roboto;
+}
+main #collection .left .dFlex {
+  gap: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+main #collection .left .dFlex .item img {
+  width: 262px;
+  height: 250px;
+}
+main #collection .left .dFlex .item p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--whi);
+  margin: 16px 0 10px 0;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #collection .left .dFlex .item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--btnCl);
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #collection .left .dFlex .item button {
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: 500;
+  background: none;
+  border-radius: 5px;
+  color: var(--btnCl);
+  padding: 12px 40px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  border: 1px solid var(--btnCl);
+  font-family: Roboto Slab;
+}
+main #collection .right {
+  width: 100%;
+  position: relative;
+}
+main #collection .right img {
+  width: 100%;
+}
+main #collection .right button {
+  left: 50%;
+  bottom: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 22px 51px;
+  position: absolute;
+  white-space: nowrap;
+  color: var(--btnCl);
+  text-transform: uppercase;
+  transform: translate(-50%, 0);
+  font-family: Roboto Slab;
+}
+main #maskGroup {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 136px;
+  background: url(/assets/img/34u6TNKXOa\ 1.png) no-repeat;
+  background-size: cover;
+}
+main #maskGroup .text {
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+main #maskGroup .text h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--whi);
+  line-height: 59px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #maskGroup .text p {
+  opacity: 70%;
+  font-size: 16px;
+  margin: 24px 0 43px 0;
+  font-weight: 400;
+  color: var(--whi);
+  line-height: 23px;
+  letter-spacing: 0em;
+  font-family: Roboto;
+}
+main #maskGroup .text button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 22px 51px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--whi);
+  background: var(--btnCl);
+  border-radius: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: Roboto Slab;
+}
+main #ourBlog {
+  width: 100%;
+  height: 100%;
+  margin-top: 124px;
+}
+main #ourBlog h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--whi);
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #ourBlog .ourBlogContent {
+  gap: 30px;
+  display: grid;
+  margin-top: 51px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+main #ourBlog .ourBlogContent .item h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: var(--whi);
+  line-height: 23px;
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #ourBlog .ourBlogContent .item p {
+  opacity: 70%;
+  font-size: 16px;
+  margin: 20px 0 43px 0;
+  font-weight: 400;
+  color: var(--whi);
+  line-height: 24px;
+  letter-spacing: 0em;
+  font-family: Roboto;
+}
+main #ourBlog .ourBlogContent .item a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--btnCl);
+  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: 0em;
+  font-family: Roboto;
+}
+main #ourBlog .getUpdate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 156px;
+  padding: 45px 40px;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--btnCl);
+  justify-content: space-between;
+}
+main #ourBlog .getUpdate h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--whi);
+  letter-spacing: 0em;
+  font-family: Noto Serif JP;
+}
+main #ourBlog .getUpdate p {
+  opacity: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 23px;
+  color: var(--whi);
+  letter-spacing: 0em;
+  font-family: Roboto;
+}
+main #ourBlog .getUpdate .input {
+  width: 456px;
+  position: relative;
+}
+main #ourBlog .getUpdate .input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 21px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--btnCl);
+  line-height: 23px;
+  letter-spacing: 0em;
+  border-radius: 5px;
+  font-family: Roboto;
+}
+main #ourBlog .getUpdate .input input::placeholder {
+  color: var(--btnCl);
+}
+main #ourBlog .getUpdate .input button {
+  outline: none;
+  border: none;
+  right: 0;
+  position: absolute;
+  padding: 18px 34px;
+  border-radius: 5px;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  padding: 136px 0 100px 0;
+  background: var(--footerBg);
+}
+footer .d-grid {
+  gap: 30px;
+  display: grid;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-template-columns: 120px 120px 120px 120px 380px;
+}
+footer .d-grid ul li {
+  opacity: 70%;
+  margin: 10px 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--whi);
+  line-height: 14px;
+  letter-spacing: 0em;
+  font-family: Roboto;
+}
+footer .d-grid ul li:first-child {
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--whi);
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+footer .d-grid ul li i {
+  margin-right: 10px;
+}
+footer .d-grid ul li.inline-block {
+  opacity: 1;
+  margin: 0 5px;
+  display: inline-block;
+}
+footer .d-grid ul li.inline-input {
+  opacity: 1;
+  position: relative;
+  margin-bottom: 38px;
+}
+footer .d-grid ul li.inline-input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--btnCl);
+  line-height: 23px;
+  letter-spacing: 0em;
+  border-radius: 5px;
+  font-family: Roboto;
+  background: var(--whi);
+}
+footer .d-grid ul li.inline-input input::placeholder {
+  opacity: 50%;
+  color: var(--bla);
+}
+footer .d-grid ul li.inline-input button {
+  outline: none;
+  border: none;
+  right: 0;
+  position: absolute;
+  padding: 12px 27px;
+  border-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  main {
+    padding: 75px 0;
+  }
+  main #collection {
+    display: block;
+  }
+  main #collection .left {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  footer .d-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  main {
+    padding: 50px 0;
+  }
+  main #dFlexImg {
+    display: block;
+  }
+  main #dFlex .item {
+    margin: 15px 0;
+  }
+  footer .d-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+  header .headerText h1 {
+    font-size: 42px;
+    line-height: 60;
+  }
+  header .headerText button {
+    padding: 11px 25px;
+  }
+  main #collection .left .dFlex {
+    display: block;
+  }
+  main #collection .left .dFlex .item {
+    margin: 15px auto;
+  }
+  main #ourBlog .getUpdate {
+    display: block;
+  }
+  main #ourBlog .getUpdate .input {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .d-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  header .headerText h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  main #bestSeller .btn-group button {
+    margin: 10px;
+  }
+  main #maskGroup .text h2 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 49px;
+  }
+  main #maskGroup .text p {
+    width: 100%;
+    margin: 24px 0 24px 0;
+  }
+  main #maskGroup .text button {
+    padding: 15px 45px;
+  }
+  main #ourBlog .getUpdate {
+    padding: 20px 25px;
+  }
+  footer .d-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
